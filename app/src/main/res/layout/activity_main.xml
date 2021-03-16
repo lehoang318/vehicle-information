@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:id="@+id/buttonTransD"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="D"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/buttonTransN"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpeed" />
+
+    <Button
+        android:id="@+id/buttonTransN"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="N"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toStartOf="@+id/editTextSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpeed" />
+
+    <Button
+        android:id="@+id/buttonTransP"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="P"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/buttonTransD"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpeed" />
+
+    <Button
+        android:id="@+id/buttonTransR"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:clickable="false"
+        android:text="R"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintStart_toEndOf="@+id/buttonTransP"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpeed" />
+
+    <Button
+        android:id="@+id/buttonAccel"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="false"
+        android:text="ACCEL"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSpeed"
+        app:layout_constraintTop_toTopOf="@+id/editTextSpeed" />
+
+    <Button
+        android:id="@+id/buttonBrake"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="false"
+        android:text="Brake"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/buttonAccel" />
+
+    <Button
+        android:id="@+id/buttonIgn"
+        android:layout_width="80dp"
+        android:layout_height="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:clickable="false"
+        android:text="IGN"
+        android:textAlignment="center"
+        android:textColor="@android:color/background_light"
+        app:layout_constraintEnd_toStartOf="@+id/editTextSpeed"
+        app:layout_constraintTop_toBottomOf="@+id/editTextSpeed" />
+
+    <EditText
+        android:id="@+id/editTextSpeed"
+        android:layout_width="240dp"
+        android:layout_height="160dp"
+        android:editable="false"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:text="000.00"
+        android:textAlignment="center"
+        android:textSize="60sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewSpeedUnit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="5dp"
+        android:text="km/h"
+        android:textSize="36sp"
+        app:layout_constraintBottom_toBottomOf="@+id/editTextSpeed"
+        app:layout_constraintStart_toEndOf="@+id/editTextSpeed" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
